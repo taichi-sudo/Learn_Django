@@ -1,0 +1,10 @@
+{%include 'header.html'%}
+
+<article>
+    <h2> {{article.title}} </h2>
+    <small>{{article.created_at | date:'Y年n月j日'}} </small>
+    {{ article.content | linebreaks }}
+    <p><a href="/"> トップページ </a></p>
+</article>
+
+{%include 'footer.html'%}
